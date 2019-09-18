@@ -1,5 +1,6 @@
-package com.kelsus.juti2019
+package com.kelsus.juti2019.network
 
+import com.kelsus.juti2019.model.GiphyResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

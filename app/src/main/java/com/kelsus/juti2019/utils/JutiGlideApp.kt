@@ -1,4 +1,4 @@
-package com.kelsus.juti2019
+package com.kelsus.juti2019.utils
 
 import android.content.Context
 import com.bumptech.glide.GlideBuilder
@@ -15,7 +15,7 @@ class JutiGlideApp : AppGlideModule() {
         super.applyOptions(context, builder)
         builder.apply {
             RequestOptions().diskCacheStrategy(DiskCacheStrategy.ALL).signature(
-                ObjectKey(System.currentTimeMillis().toShort())
+                    ObjectKey(System.currentTimeMillis().toShort())
             )
         }
     }
