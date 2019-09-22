@@ -16,7 +16,7 @@ class ApiRepository {
                 }
                 return ApiResult.NonSuccess("Sin resultados")
             } else {
-                return ApiResult.NonSuccess(response.errorBody()?.string() ?: "Empty error body")
+                return ApiResult.NonSuccess(response.errorBody()?.string() ?: "Sin mensaje de error")
             }
         } catch (e: Exception) {
             return ApiResult.Failure(e)
